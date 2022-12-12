@@ -1,8 +1,9 @@
 const mongoose = require('mongoose')
-const db = process.env.SECRET_KEY
+// const db = process.env.SECRET_KEY
+const db ='Task-App'
 
 
-mongoose.connect(`${db}`,{
+mongoose.connect(`mongodb://localhost/${db}`,{
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
